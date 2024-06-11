@@ -8,10 +8,10 @@ import {Howl, Howler} from 'howler';
 })
 export class Tab1Page implements OnInit{
 
-  birthday:Date = new Date(2003, 4 ,13);
+  birthday:Date = new Date(2003, 4 ,7);
   rightPassword:boolean=false;
   enteredPassword:'';
-  password='1997';
+  password='1998';
   //manohara,nagila,roja,sakhi,sathiya,bombay,cheli,kannullo
    sounds =[
      new Howl({
@@ -80,7 +80,7 @@ export class Tab1Page implements OnInit{
     this.sounds.forEach(x=>{
       x.stop();
     })
-    if(this.soundindex==this.sounds.length-1){
+    if(this.soundindex==this.sounds.length-1){ 
       this.soundindex=0;
     }
     this.sounds[++this.soundindex].play();
